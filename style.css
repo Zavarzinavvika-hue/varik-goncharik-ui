@@ -53,4 +53,5 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; co
 .city-card li:last-child { border-bottom: none; }
 .custom-bot-mascot { position: fixed; bottom: 15px; right: 15px; width: 90px; z-index: 9998; cursor: pointer; transition: transform 0.2s; mix-blend-mode: multiply; }
 .custom-bot-mascot:hover { transform: scale(1.1); }
-df-messenger { --df-messenger-button-titlebar-color: transparent; --df-messenger-font-color: #1a1a1a; --df-messenger-chat-background-color: #ffffff; --df-messenger-bot-message: #f4f4f4; --df-messenger-bot-message-font-color: #1a1a1a; --df-messenger-user-message: #e50914; --df-messenger-user-message-font-color: #ffffff; --df-messenger-send-icon: #e50914; --df-messenger-chat-window-height: 550px; z-index: 9999; }
+df-messenger { --df-messenger-button-titlebar-color: #111111; --df-messenger-button-titlebar-font-color: #ffffff; --df-messenger-chat-background-color: #ffffff; --df-messenger-bot-message: #f4f4f4; --df-messenger-bot-message-font-color: #1a1a1a; --df-messenger-user-message: #e50914; --df-messenger-user-message-font-color: #ffffff; --df-messenger-send-icon: #e50914; --df-messenger-chat-window-height: 550px; opacity: 0; pointer-events: none; z-index: -1; }
+df-messenger[expand="true"] { opacity: 1; pointer-events: auto; z-index: 9999; }
