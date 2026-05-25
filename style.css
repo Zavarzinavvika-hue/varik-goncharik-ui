@@ -51,4 +51,6 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; co
 .city-card ul { list-style-type: none; padding: 0; }
 .city-card li { padding: 6px 0; color: #444; font-size: 15px; border-bottom: 1px dashed #eee; }
 .city-card li:last-child { border-bottom: none; }
-df-messenger { --df-messenger-brand-color: #111111; --df-messenger-font-color: #ffffff; --df-messenger-chat-background-color: #fafafa; --df-messenger-user-message: #e50914; --df-messenger-user-message-font: #ffffff; --df-messenger-bot-message: #eeeeee; --df-messenger-bot-message-font: #1a1a1a; --df-messenger-send-icon: #e50914; --df-messenger-chat-window-height: 550px; z-index: 9999; }
+.custom-bot-mascot { position: fixed; bottom: 15px; right: 15px; width: 90px; z-index: 9998; cursor: pointer; transition: transform 0.2s; mix-blend-mode: multiply; }
+.custom-bot-mascot:hover { transform: scale(1.1); }
+df-messenger { --df-messenger-button-titlebar-color: transparent; --df-messenger-font-color: #ffffff; --df-messenger-chat-background-color: #fafafa; --df-messenger-user-message: #e50914; --df-messenger-user-message-font: #ffffff; --df-messenger-bot-message: #eeeeee; --df-messenger-bot-message-font: #1a1a1a; --df-messenger-send-icon: #e50914; --df-messenger-chat-window-height: 550px; z-index: 9999; }
