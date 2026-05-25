@@ -51,4 +51,4 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; co
 .city-card ul { list-style-type: none; padding: 0; }
 .city-card li { padding: 6px 0; color: #444; font-size: 15px; border-bottom: 1px dashed #eee; }
 .city-card li:last-child { border-bottom: none; }
-df-messenger { --df-messenger-button-titlebar-color: #ffffff; --df-messenger-button-titlebar-font-color: #1a1a1a; --df-messenger-chat-background-color: #f9f9f9; --df-messenger-bot-message: #ffffff; --df-messenger-bot-message-font-color: #1a1a1a; --df-messenger-user-message: #e50914; --df-messenger-user-message-font-color: #ffffff; --df-messenger-send-icon: #e50914; z-index: 9999; }
+df-messenger { --df-messenger-brand-color: #e50914; --df-messenger-font-color: #ffffff; --df-messenger-chat-window-height: 500px; z-index: 9999; }
