@@ -9,14 +9,18 @@
 <body>
     <header class="site-header">
         <div class="header-container">
-            
             <div class="brand-block">
-                <div class="logo">🍿 Варик - Гончарик</div>
+                <div class="logo">🍿 Варик-Гончарик</div>
                 <div class="city-selector">
                     <select id="citySelect">
                         <option value="spb">Санкт-Петербург</option>
                         <option value="msk">Москва</option>
-                        <option value="reg">Регионы</option>
+                        <option value="perm">Пермь</option>
+                        <option value="kazan">Казань</option>
+                        <option value="krd">Краснодар</option>
+                        <option value="sochi">Сочи</option>
+                        <option value="nn">Нижний Новгород</option>
+                        <option value="vlad">Владивосток</option>
                     </select>
                 </div>
             </div>
@@ -28,7 +32,7 @@
                 </div>
                 <div class="nav-group unique-features">
                     <a href="#roulette" class="nav-link highlight-link">Кино-Рулетка 🎲</a>
-                    <a href="#merch" class="nav-link">Мерч / Магазин</a>
+                    <a href="#merch" class="nav-link">Магазин</a>
                     <a href="#kinobar" class="nav-link">Кинобар 🍿</a>
                 </div>
             </nav>
@@ -40,8 +44,7 @@
     <section class="site-cover">
         <div class="cover-overlay">
             <div class="cover-text-container">
-                <h1>Варик - Гончарик</h1>
-                <p>Больше чем просто киносеть. Погрузись в атмосферу кино нового поколения.</p>
+                <p class="hero-subtitle">Больше чем просто киносеть. Погрузись в атмосферу кино нового поколения.</p>
                 <div class="cover-buttons">
                     <a href="#schedule" class="action-btn primary">Выбрать сеанс</a>
                     <a href="#roulette" class="action-btn secondary">Испытать удачу</a>
@@ -61,11 +64,64 @@
         </section>
         <section id="cinemas" class="content-section grey-bg">
             <div class="section-header">
-                <h2>Наши Кинотеатры</h2>
-                <p>Адреса, как добраться и доступные форматы залов (IMAX, VIP, Комфорт)</p>
+                <h2>📍 География сети «Варик-Гончарик»</h2>
+                <p>Наши современные кинотеатры открыты для вас в крупнейших городах России. Выбирайте ближайший и приходите за эмоциями!</p>
             </div>
-            <div class="placeholder-box">
-                <p>Информационные карточки залов и адресов сети...</p>
+            <div class="geography-container">
+                <div class="head-office-card">
+                    <h3>🏢 Главный офис</h3>
+                    <p><strong>Санкт-Петербург</strong>, ул. Высотная, д. 1<br>«Лахта Центр», 52 этаж.</p>
+                    <div class="office-details">
+                        <span>🚇 Метро: Беговая, Зенит, Старая Деревня</span>
+                        <span>📞 Тел: +7 967 563-55-21</span>
+                    </div>
+                </div>
+                <div class="cities-grid">
+                    <div class="city-card">
+                        <h4>🎬 Санкт-Петербург</h4>
+                        <ul>
+                            <li>ТРК «Лондон Молл»</li>
+                            <li>ТРЦ «Галерея»</li>
+                            <li>ТК «Невский Центр»</li>
+                            <li>МЕГА Дыбенко</li>
+                            <li>ТРЦ «Питерлэнд»</li>
+                            <li>ТРК «Европолис»</li>
+                            <li>ТРК «Сити Молл»</li>
+                            <li>МЕГА Парнас</li>
+                        </ul>
+                    </div>
+                    <div class="city-card">
+                        <h4>🔴 Москва</h4>
+                        <ul>
+                            <li>ТРЦ «Авиапарк»</li>
+                            <li>ТЦ «Метрополис»</li>
+                            <li>ТРЦ «Европейский»</li>
+                            <li>ТРК «Атриум»</li>
+                            <li>ТРЦ «Афимолл Сити»</li>
+                        </ul>
+                    </div>
+                    <div class="city-card">
+                        <h4>🔴 Пермь & Казань</h4>
+                        <ul>
+                            <li><strong>Пермь:</strong> ТРЦ «Планета», ТРК «Семья»</li>
+                            <li><strong>Казань:</strong> ТРЦ «KazanMall», ТЦ «МЕГА»</li>
+                        </ul>
+                    </div>
+                    <div class="city-card">
+                        <h4>🔴 Юг России</h4>
+                        <ul>
+                            <li><strong>Краснодар:</strong> ТРЦ «Галерея Краснодар», ТРК «OZ MALL»</li>
+                            <li><strong>Сочи:</strong> ТРЦ «МореМолл», ТЦ «City Plaza»</li>
+                        </ul>
+                    </div>
+                    <div class="city-card">
+                        <h4>🔴 Другие регионы</h4>
+                        <ul>
+                            <li><strong>Нижний Новгород:</strong> ТРЦ «Фантастика», ТРК «Небо»</li>
+                            <li><strong>Владивосток:</strong> ТВК «Калина Молл», ТРК «Седанка Сити»</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="bonuses" class="content-section">
@@ -113,12 +169,9 @@
                 <p>Форма авторизации / Панель профиля пользователя...</p>
             </div>
         </section>
-
     </main>
-
     <footer class="site-footer">
         <p>&copy; 2026 Сеть кинотеатров «Варик - Гончарик». Все права защищены.</p>
     </footer>
 </body>
 </html>
-
