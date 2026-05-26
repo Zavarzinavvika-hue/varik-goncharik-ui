@@ -41,9 +41,10 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; co
 .start-roulette-btn:hover { background-color: #ffb84d; transform: scale(1.05); }
 .site-footer { background-color: #111111; color: #666666; text-align: center; padding: 30px; margin-top: 60px; font-size: 14px; }
 .geography-container { display: flex; flex-direction: column; gap: 30px; }
-.head-office-card { background: linear-gradient(135deg, #1a1a1a, #333333); color: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-.head-office-card h3 { margin-bottom: 10px; color: #ff9900; }
+.head-office-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.3); padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.head-office-card h3 { margin-bottom: 10px; color: #d4af37; }
 .office-details { display: flex; gap: 20px; margin-top: 15px; flex-wrap: wrap; font-size: 14px; color: #cccccc; }
+.address-showcase-img img { width: 100%; height: auto; max-height: 450px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.4); box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
 .cities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .city-card { background-color: white; border: 1px solid #eeeeee; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
 .city-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
@@ -51,8 +52,12 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; co
 .city-card ul { list-style-type: none; padding: 0; }
 .city-card li { padding: 6px 0; color: #444; font-size: 15px; border-bottom: 1px dashed #eee; }
 .city-card li:last-child { border-bottom: none; }
+.city-card.dark-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.2); }
+.city-card.dark-card:hover { border-color: #d4af37; background: rgba(255, 255, 255, 0.06); }
+.city-card.dark-card li { color: #e0e0e0; border-bottom-color: rgba(212, 175, 55, 0.1); }
 .content-section.bar-theme { background: linear-gradient(145deg, #0f1c3f, #081026); border: 2px solid #d4af37; box-shadow: 0px 10px 30px rgba(212, 175, 55, 0.15); color: #ffffff; padding: 50px 25px; }
 .gold-text { color: #d4af37; text-shadow: 0px 2px 4px rgba(0,0,0,0.5); font-weight: 700; font-size: 32px; letter-spacing: 1px; }
+.gold-text-sub { color: #d4af37; font-size: 18px; border-bottom: 2px solid #d4af37 !important; padding-bottom: 8px; display: inline-block; }
 .bar-intro { color: #e0e0e0 !important; font-size: 16px; margin-top: 10px; font-style: italic; }
 .center-header { text-align: center; margin-bottom: 45px; }
 .bar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
@@ -75,6 +80,4 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; co
 .add-cart-btn { background: transparent; color: #d4af37; border: 1px solid #d4af37; }
 .add-cart-btn:hover { background: rgba(212, 175, 55, 0.1); color: #ffffff; border-color: #ffffff; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
-df-messenger { --df-messenger-button-titlebar-color: #111111; --df-messenger-button-titlebar-font-color: #ffffff; --df-messenger-chat-background-color: #f9f9f9; --df-messenger-bot-message: #ffffff; --df-messenger-bot-message-font-color: #1a1a1a; --df-messenger-user-message: #e50914; --df-messenger-user-message-font-color: #ffffff; --df-messenger-send-icon: #e50914; z-index: 9999; }
-.custom-bot-mascot { position: fixed; bottom: 15px; right: 15px; width: 90px; z-index: 9998; cursor: pointer; transition: transform 0.2s; mix-blend-mode: multiply; }
-.custom-bot-mascot:hover { transform: scale(1.1); }
+df-messenger { --df-messenger-button-titlebar-color: #111111; --df-messenger-button-titlebar-font-color: #ffffff; --df-messenger-chat-background-color: #ffffff; --df-messenger-bot-message: #f4f4f4; --df-messenger-bot-message-font-color: #1a1a1a; --df-messenger-user-message: #e50914; --df-messenger-user-message-font-color: #ffffff; --df-messenger-send-icon: #e50914; --df-messenger-chat-window-height: 500px; --df-messenger-chat-window-width: 370px; --df-messenger-font-family: 'Segoe UI', Arial, sans-serif; z-index: 9999; text-align: left; }
