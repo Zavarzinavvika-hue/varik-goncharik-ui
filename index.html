@@ -168,22 +168,38 @@
 </div>
 <button class="select-btn open-modal-btn">Выбрать</button>
 <div class="product-modal">
-<div class="product-modal-box">
+<div class="product-modal-box wide-modal-box">
 <button class="close-modal-btn">✖</button>
+<div class="modal-split">
+<div class="modal-left">
+<img src="https://sun9-13.userapi.com/s/v1/ig2/a8UIaqW7136IsyebISk3A_z2y3VLSP_5sCP0YsvS5WHlNF_n9T0PkHbcIVJGOtgxbyUWg4bvysVzctD9qdGC01Yt.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=90MqpW6veIFi5V-NKcMRSrQiplR6ERtAdNf_kH4z8fw&cs=1024x0" alt="Попкорн">
+</div>
+<div class="modal-right">
 <h3 class="gold-text-sub">🍿 Легендарный попкорн</h3>
+<p class="modal-subtitle">Хрустящая классика</p>
 <div class="details-content">
 <p>Фирменный хрустящий попкорн из отборных зёрен кукурузы, раскрытых горячим воздухом. Идеальный баланс вкуса в каждой пачке.</p>
-<label>Выбор вкуса:
-<select class="taste-select"><option>Соленый</option><option>Сладкий</option><option>Карамельный</option><option>Сырный</option><option>Фруктовый</option></select>
-</label>
-<label>Размер порции:
-<select class="size-select" onchange="updateCardPrice(this)"><option value="350">Маленький (S) — 350 ₽</option><option value="500">Средний (M) — 500 ₽</option><option value="750">Большой (L) — 750 ₽</option></select>
-</label>
+<label>ВЫБЕРИТЕ ВКУС:</label>
+<div class="pill-group">
+<label class="pill-label"><input type="radio" name="popcorn_taste" value="Соленый" checked><span>Соленый</span></label>
+<label class="pill-label"><input type="radio" name="popcorn_taste" value="Сладкий"><span>Сладкий</span></label>
+<label class="pill-label"><input type="radio" name="popcorn_taste" value="Карамельный"><span>Карамельный</span></label>
+<label class="pill-label"><input type="radio" name="popcorn_taste" value="Сырный"><span>Сырный</span></label>
+<label class="pill-label"><input type="radio" name="popcorn_taste" value="Фруктовый"><span>Фруктовый</span></label>
+</div>
+<label>ВЫБЕРИТЕ ОБЪЕМ / ПОРЦИЮ:</label>
+<div class="pill-group">
+<label class="pill-label"><input type="radio" name="popcorn_size" value="350" onchange="updatePillPrice(this)" checked><span>Маленький (S)</span></label>
+<label class="pill-label"><input type="radio" name="popcorn_size" value="500" onchange="updatePillPrice(this)"><span>Средний (M)</span></label>
+<label class="pill-label"><input type="radio" name="popcorn_size" value="750" onchange="updatePillPrice(this)"><span>Большой (L)</span></label>
+</div>
 </div>
 <div class="modal-footer-price">Итого: <span class="card-price">350 ₽</span></div>
 <div class="card-actions">
 <button class="buy-now-btn" data-id="popcorn" data-name="Легендарный попкорн" data-price="350">Купить</button>
 <button class="add-cart-btn" data-id="popcorn" data-name="Легендарный попкорн" data-price="350">В корзину</button>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -196,16 +212,24 @@
 </div>
 <button class="select-btn open-modal-btn">Выбрать</button>
 <div class="product-modal">
-<div class="product-modal-box">
+<div class="product-modal-box wide-modal-box">
 <button class="close-modal-btn">✖</button>
+<div class="modal-split">
+<div class="modal-left">
+<img src="https://sun9-52.userapi.com/s/v1/ig2/xaSyJNUJHUDW1ta6dLbwSMvy4B0-D7aeDvXkrcJL4Sna6BrzbyIdek9kNj-hQglyrZaL_qM5l6zGFx3zAqovuGoS.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=gdrKPx_WxH8x47-A3pdAQksIbBYgOWdR_tr2G8SH77g&cs=1024x0" alt="Хот-дог">
+</div>
+<div class="modal-right">
 <h3 class="gold-text-sub">🌭 Хот-дог «Классик»</h3>
+<p class="modal-subtitle">Горячая закуска</p>
 <div class="details-content">
-<p>Горячая поджаренная булочка, ультрасочная премиальная сосиска, пикантная заправка из классического томатного кетчупа и деликатной горчицы. Сверху посыпается хрустящим сушеным луком.</p>
+<p>Горячая поджаренная булочка, ультрасочная премиальная сосиска, пикантная заправка из классического томатного кетчупа и деликатной горчицы. Сверху посыпается хрустящим сушеным луком для идеальной текстуры.</p>
 </div>
 <div class="modal-footer-price">Итого: <span class="card-price">380 ₽</span></div>
 <div class="card-actions">
 <button class="buy-now-btn" data-id="hotdog" data-name="Хот-дог Классик" data-price="380">Купить</button>
 <button class="add-cart-btn" data-id="hotdog" data-name="Хот-дог Классик" data-price="380">В корзину</button>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -218,16 +242,30 @@
 </div>
 <button class="select-btn open-modal-btn">Выбрать</button>
 <div class="product-modal">
-<div class="product-modal-box">
+<div class="product-modal-box wide-modal-box">
 <button class="close-modal-btn">✖</button>
+<div class="modal-split">
+<div class="modal-left">
+<img src="https://sun9-15.userapi.com/s/v1/ig2/EeGF4i9LQhyoJ4YbTCnz82EzcoeZb5euHtGz84PEcCwVjLVy9knm1n9GBPOCwx4E3udXXFZQQXOmQth3XbLEwtMs.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=z8yodJTnYz2yGDEWXZvka89CiLpEIPgLRwd4zr6sTos&cs=1024x0" alt="Луковые кольца">
+</div>
+<div class="modal-right">
 <h3 class="gold-text-sub">🧅 Луковые кольца</h3>
+<p class="modal-subtitle">Идеально под напитки</p>
 <div class="details-content">
 <p>Натуральные кольца репчатого лука в пышной панировке, обжаренные до золотистой корочки. Подаются с нежным соусом на ваш выбор.</p>
+<label>ВЫБЕРИТЕ СОУС:</label>
+<div class="pill-group">
+<label class="pill-label"><input type="radio" name="onion_sauce" value="Сырный" checked><span>Сырный</span></label>
+<label class="pill-label"><input type="radio" name="onion_sauce" value="Чесночный"><span>Чесночный</span></label>
+<label class="pill-label"><input type="radio" name="onion_sauce" value="Кетчуп"><span>Кетчуп</span></label>
+</div>
 </div>
 <div class="modal-footer-price">Итого: <span class="card-price">320 ₽</span></div>
 <div class="card-actions">
 <button class="buy-now-btn" data-id="onion_rings" data-name="Луковые кольца" data-price="320">Купить</button>
 <button class="add-cart-btn" data-id="onion_rings" data-name="Луковые кольца" data-price="320">В корзину</button>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -240,16 +278,24 @@
 </div>
 <button class="select-btn open-modal-btn">Выбрать</button>
 <div class="product-modal">
-<div class="product-modal-box">
+<div class="product-modal-box wide-modal-box">
 <button class="close-modal-btn">✖</button>
+<div class="modal-split">
+<div class="modal-left">
+<img src="https://sun9-38.userapi.com/s/v1/ig2/8pxzFHRT0eQ-D6whokHOoAYd_B3_inKD4AyXNy0hv5xMn2EbVwLU_jmaHK3Izt2JJz7unGOuI0jtQNGKQEL5jlH0.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=24yFRx9ucxdb3-EryuF78-oTvgJM6Oz4QOEZmjS7bFk&cs=1024x0" alt="Креветки">
+</div>
+<div class="modal-right">
 <h3 class="gold-text-sub">🍤 Запеченные креветки</h3>
+<p class="modal-subtitle">Премиальная закуска</p>
 <div class="details-content">
-<p>Крупные тигровые креветки, деликатно запеченные с ароматным чесночным маслом и специями. Подаются с долькой свежего лимона.</p>
+<p>Крупные тигровые креветки, деликатно запеченные с ароматным чесночным маслом и специями. Подаются с долькой свежего лимона для придания легкой кислинки.</p>
 </div>
 <div class="modal-footer-price">Итого: <span class="card-price">550 ₽</span></div>
 <div class="card-actions">
 <button class="buy-now-btn" data-id="shrimp" data-name="Запеченные креветки" data-price="550">Купить</button>
 <button class="add-cart-btn" data-id="shrimp" data-name="Запеченные креветки" data-price="550">В корзину</button>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -262,14 +308,22 @@
 </div>
 <button class="select-btn open-modal-btn">Выбрать</button>
 <div class="product-modal">
-<div class="product-modal-box">
+<div class="product-modal-box wide-modal-box">
 <button class="close-modal-btn">✖</button>
+<div class="modal-split">
+<div class="modal-left">
+<img src="https://sun9-87.userapi.com/s/v1/ig2/NncQHTY99AUeLaLsSxBt7unIqRPonf_hZGFnA0p0olQXpoiJ5HLe8Iu1bYufp42DzcDnOG_sv0ARNV-QaJl9MbBM.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=ZT0Nkw0-jmK8EW8A4BgZSNDe6uPhtxR3X7jfq9WiDTk&cs=1024x0" alt="Начос">
+</div>
+<div class="modal-right">
 <h3 class="gold-text-sub">🌽 Чипсы / Начос</h3>
+<p class="modal-subtitle">Мексиканская классика</p>
 <div class="details-content">
 <p>Мексиканские кукурузные чипсы начос с добавлением морской соли. Идеально сочетаются с нашими фирменными соусами.</p>
-<label>Выбор соуса:
-<select class="taste-select"><option>Сырный соус</option><option>Томатная сальса</option></select>
-</label>
+<label>ВЫБЕРИТЕ СОУС:</label>
+<div class="pill-group">
+<label class="pill-label"><input type="radio" name="nachos_sauce" value="Сырный соус" checked><span>Сырный соус</span></label>
+<label class="pill-label"><input type="radio" name="nachos_sauce" value="Томатная сальса"><span>Томатная сальса</span></label>
+</div>
 </div>
 <div class="modal-footer-price">Итого: <span class="card-price">420 ₽</span></div>
 <div class="card-actions">
@@ -279,22 +333,35 @@
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="bar-item-card" data-base-price="180">
 <img src="https://sun9-5.userapi.com/s/v1/ig2/jwjNdl02eHe4zJzlzg2dQ1qZ_Img69qLoiJypQp8CTTcKv0vr8q6f3MRtEZUo_EL1wE09WadXrdIwrOs55JR-Lci.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=bKF9mmUYYfYHnyK3cYmh-0FV3B1ctz4Pp3HHLIpA0r0&cs=1024x0" alt="Сухарики" class="open-modal-btn">
 <div class="card-brief">
-<h4 class="open-modal-btn">🥖 Сухарики</h4>
+<h4 class="open-modal-btn">🥖 Сухарики в ассортим.</h4>
 <span class="card-price">180 ₽</span>
 </div>
 <button class="select-btn open-modal-btn">Выбрать</button>
 <div class="product-modal">
-<div class="product-modal-box">
+<div class="product-modal-box wide-modal-box">
 <button class="close-modal-btn">✖</button>
+<div class="modal-split">
+<div class="modal-left">
+<img src="https://sun9-5.userapi.com/s/v1/ig2/jwjNdl02eHe4zJzlzg2dQ1qZ_Img69qLoiJypQp8CTTcKv0vr8q6f3MRtEZUo_EL1wE09WadXrdIwrOs55JR-Lci.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=bKF9mmUYYfYHnyK3cYmh-0FV3B1ctz4Pp3HHLIpA0r0&cs=1024x0" alt="Сухарики">
+</div>
+<div class="modal-right">
 <h3 class="gold-text-sub">🥖 Сухарики в ассортим.</h3>
+<p class="modal-subtitle">Легкий снек</p>
 <div class="details-content">
 <p>Ржаные и пшеничные гренки, приготовленные по авторскому рецепту с натуральными специями. Хрустящая закуска в удобной пачке.</p>
-<label>Выбор вкуса:
-<select class="taste-select"><option>Лук</option><option>Чеснок</option><option>Соленый огурец</option><option>Сыр</option><option>Попкорн</option></select>
-</label>
+<label>ВЫБЕРИТЕ ВКУС:</label>
+<div class="pill-group">
+<label class="pill-label"><input type="radio" name="croutons_taste" value="Лук" checked><span>Лук</span></label>
+<label class="pill-label"><input type="radio" name="croutons_taste" value="Чеснок"><span>Чеснок</span></label>
+<label class="pill-label"><input type="radio" name="croutons_taste" value="Соленый огурец"><span>Соленый огурец</span></label>
+<label class="pill-label"><input type="radio" name="croutons_taste" value="Сыр"><span>Сыр</span></label>
+<label class="pill-label"><input type="radio" name="croutons_taste" value="Попкорн"><span>Попкорн</span></label>
+</div>
 </div>
 <div class="modal-footer-price">Итого: <span class="card-price">180 ₽</span></div>
 <div class="card-actions">
@@ -304,77 +371,49 @@
 </div>
 </div>
 </div>
-<div class="bar-item-card" data-base-price="250">
-<img src="https://sun9-82.userapi.com/s/v1/ig2/dZK_y4pwhhhWgQVsH-ZTUY-zNp5_yynWWT5sGSG0Pr24901SzZHnfH7hC9XifE5H6FdaCvqmCtq2Vg0ZIhJFk50Q.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=RUwHlnTaRDCA_hvgjmKLsWck3NxrTxe_fwaK5aNEHZI&cs=1024x0" alt="Газировка" class="open-modal-btn">
-<div class="card-brief">
-<h4 class="open-modal-btn">🥤 Газировка</h4>
-<span class="card-price">250 ₽</span>
-</div>
-<button class="select-btn open-modal-btn">Выбрать</button>
-<div class="product-modal">
-<div class="product-modal-box">
-<button class="close-modal-btn">✖</button>
-<h3 class="gold-text-sub">🥤 Газировка</h3>
-<div class="details-content">
-<p>Классическая ледяная газировка со льдом. Идеально освежает и подчеркивает вкус горячих закусок.</p>
-<label>Объем стакана:
-<select class="size-select" onchange="updateCardPrice(this)"><option value="250">0.5 литра — 250 ₽</option><option value="400">1.0 литр — 400 ₽</option></select>
-</label>
-</div>
-<div class="modal-footer-price">Итого: <span class="card-price">250 ₽</span></div>
-<div class="card-actions">
-<button class="buy-now-btn" data-id="soda" data-name="Газировка" data-price="250">Купить</button>
-<button class="add-cart-btn" data-id="soda" data-name="Газировка" data-price="250">В корзину</button>
-</div>
-</div>
 </div>
 </div>
 <div class="bar-item-card" data-base-price="220">
-<img src="https://sun9-82.userapi.com/s/v1/ig2/dZK_y4pwhhhWgQVsH-ZTUY-zNp5_yynWWT5sGSG0Pr24901SzZHnfH7hC9XifE5H6FdaCvqmCtq2Vg0ZIhJFk50Q.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=RUwHlnTaRDCA_hvgjmKLsWck3NxrTxe_fwaK5aNEHZI&cs=1024x0" alt="Соки" class="open-modal-btn">
+<img src="https://sun9-82.userapi.com/s/v1/ig2/dZK_y4pwhhhWgQVsH-ZTUY-zNp5_yynWWT5sGSG0Pr24901SzZHnfH7hC9XifE5H6FdaCvqmCtq2Vg0ZIhJFk50Q.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=RUwHlnTaRDCA_hvgjmKLsWck3NxrTxe_fwaK5aNEHZI&cs=1024x0" alt="Напитки" class="open-modal-btn">
 <div class="card-brief">
-<h4 class="open-modal-btn">🧃 Соки</h4>
-<span class="card-price">220 ₽</span>
+<h4 class="open-modal-btn">🥤 Прохладительные Напитки</h4>
+<span class="card-price">От 220 ₽</span>
 </div>
 <button class="select-btn open-modal-btn">Выбрать</button>
 <div class="product-modal">
-<div class="product-modal-box">
+<div class="product-modal-box wide-modal-box">
 <button class="close-modal-btn">✖</button>
-<h3 class="gold-text-sub">🧃 Соки в ассортименте</h3>
+<div class="modal-split">
+<div class="modal-left">
+<img src="https://sun9-82.userapi.com/s/v1/ig2/dZK_y4pwhhhWgQVsH-ZTUY-zNp5_yynWWT5sGSG0Pr24901SzZHnfH7hC9XifE5H6FdaCvqmCtq2Vg0ZIhJFk50Q.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=RUwHlnTaRDCA_hvgjmKLsWck3NxrTxe_fwaK5aNEHZI&cs=1024x0" alt="Напитки">
+</div>
+<div class="modal-right">
+<h3 class="gold-text-sub">Освежающие напитки</h3>
+<p class="modal-subtitle">🥤 Ледяные напитки на выбор</p>
 <div class="details-content">
-<p>Натуральные фруктовые и ягодные соки премиум-качества. Насыщенный вкус спелых плодов без добавления консервантов.</p>
-<label>Выбор вкуса:
-<select class="taste-select"><option>Апельсин</option><option>Яблоко</option><option>Вишня</option><option>Мультифрукт</option></select>
-</label>
+<p>Широкий ассортимент классических прохладительных газированных напитков, соков и премиальных фрешей. Идеальное дополнение к соленым и сырным закускам.</p>
+<label>ВЫБЕРИТЕ ВКУС / ТИП:</label>
+<div class="pill-group">
+<label class="pill-label"><input type="radio" name="drink_taste" value="Кола" checked><span>Газировка Кола</span></label>
+<label class="pill-label"><input type="radio" name="drink_taste" value="Спрайт"><span>Газировка Спрайт</span></label>
+<label class="pill-label"><input type="radio" name="drink_taste" value="Апельсин"><span>Сок Апельсин</span></label>
+<label class="pill-label"><input type="radio" name="drink_taste" value="Яблоко"><span>Сок Яблоко</span></label>
+<label class="pill-label"><input type="radio" name="drink_taste" value="Фреш"><span>Свежевыжатый Фреш</span></label>
+</div>
+<label>ВЫБЕРИТЕ ОБЪЕМ / ПОРЦИЮ:</label>
+<div class="pill-group">
+<label class="pill-label"><input type="radio" name="drink_size" value="220" onchange="updatePillPrice(this)" checked><span>Сок пакетированный — 220 ₽</span></label>
+<label class="pill-label"><input type="radio" name="drink_size" value="250" onchange="updatePillPrice(this)"><span>Газировка (0.5 л) — 250 ₽</span></label>
+<label class="pill-label"><input type="radio" name="drink_size" value="400" onchange="updatePillPrice(this)"><span>Газировка (1.0 л) — 400 ₽</span></label>
+<label class="pill-label"><input type="radio" name="drink_size" value="450" onchange="updatePillPrice(this)"><span>Свежевыжатый сок — 450 ₽</span></label>
+</div>
 </div>
 <div class="modal-footer-price">Итого: <span class="card-price">220 ₽</span></div>
 <div class="card-actions">
-<button class="buy-now-btn" data-id="juice" data-name="Соки в ассортименте" data-price="220">Купить</button>
-<button class="add-cart-btn" data-id="juice" data-name="Соки в ассортименте" data-price="220">В корзину</button>
+<button class="buy-now-btn" data-id="drinks_mix" data-name="Освежающий напиток" data-price="220">Купить</button>
+<button class="add-cart-btn" data-id="drinks_mix" data-name="Освежающий напиток" data-price="220">В корзину</button>
 </div>
 </div>
-</div>
-</div>
-<div class="bar-item-card" data-base-price="450">
-<img src="https://sun9-82.userapi.com/s/v1/ig2/dZK_y4pwhhhWgQVsH-ZTUY-zNp5_yynWWT5sGSG0Pr24901SzZHnfH7hC9XifE5H6FdaCvqmCtq2Vg0ZIhJFk50Q.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=RUwHlnTaRDCA_hvgjmKLsWck3NxrTxe_fwaK5aNEHZI&cs=1024x0" alt="Фреш" class="open-modal-btn">
-<div class="card-brief">
-<h4 class="open-modal-btn">🍊 Свежевыжатый сок</h4>
-<span class="card-price">450 ₽</span>
-</div>
-<button class="select-btn open-modal-btn">Выбрать</button>
-<div class="product-modal">
-<div class="product-modal-box">
-<button class="close-modal-btn">✖</button>
-<h3 class="gold-text-sub">🍊 Свежевыжатый сок</h3>
-<div class="details-content">
-<p>Натуральный фреш, отжимаемый непосредственно перед началом вашего сеанса. Максимум витаминов и чистый природный вкус.</p>
-<label>Выбор фрукта:
-<select class="taste-select"><option>Апельсиновый</option><option>Грейпфрутовый</option></select>
-</label>
-</div>
-<div class="modal-footer-price">Итого: <span class="card-price">450 ₽</span></div>
-<div class="card-actions">
-<button class="buy-now-btn" data-id="fresh" data-name="Свежевыжатый сок" data-price="450">Купить</button>
-<button class="add-cart-btn" data-id="fresh" data-name="Свежевыжатый сок" data-price="450">В корзину</button>
 </div>
 </div>
 </div>
@@ -398,9 +437,9 @@
 <df-messenger intent="WELCOME" chat-title="Варик-Гончарик" agent-id="ec699caf-f14a-4a44-8a08-49cab484a764" language-code="ru" chat-icon="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></df-messenger>
 <img src="https://sun9-62.userapi.com/s/v1/ig2/gZJ1_e2h3SiXRsHkasMsDhKUEQqkqydRQeQliSJZga9aO6iUB4YUC7_qcm8vCVs0y1Tn9IdLjDtsP6cTNrMMpt9X.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x480,1080x720,1280x853,1440x960,1536x1024&from=bu&u=0rAYHVJgczhhNqYdIK0Dm8xxPLF6Fa6U0E5RPcapN0k&cs=1536x0" class="custom-bot-mascot" onclick="document.querySelector('df-messenger').setAttribute('expand', 'true')" alt="Чат">
 <script>
-function updateCardPrice(selectElement) {
-const newPrice = selectElement.value;
-const card = selectElement.closest('.bar-item-card');
+function updatePillPrice(radioElement) {
+const newPrice = radioElement.value;
+const card = radioElement.closest('.bar-item-card');
 card.querySelectorAll('.card-price').forEach(el => el.innerText = newPrice + ' ₽');
 card.querySelector('.buy-now-btn').setAttribute('data-price', newPrice);
 card.querySelector('.add-cart-btn').setAttribute('data-price', newPrice);
