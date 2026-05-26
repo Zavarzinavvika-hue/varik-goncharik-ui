@@ -51,4 +51,30 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; co
 .city-card ul { list-style-type: none; padding: 0; }
 .city-card li { padding: 6px 0; color: #444; font-size: 15px; border-bottom: 1px dashed #eee; }
 .city-card li:last-child { border-bottom: none; }
-df-messenger { --df-messenger-button-titlebar-color: #ffffff; --df-messenger-button-titlebar-font-color: #1a1a1a; --df-messenger-chat-background-color: #f9f9f9; --df-messenger-bot-message: #ffffff; --df-messenger-user-message: #eeeeee; --df-messenger-font-color: #1a1a1a; --df-messenger-send-icon: #e50914; z-index: 9999; }
+.content-section.bar-theme { background: linear-gradient(145deg, #0f1c3f, #081026); border: 2px solid #d4af37; box-shadow: 0px 10px 30px rgba(212, 175, 55, 0.15); color: #ffffff; padding: 50px 25px; }
+.gold-text { color: #d4af37; text-shadow: 0px 2px 4px rgba(0,0,0,0.5); font-weight: 700; font-size: 32px; letter-spacing: 1px; }
+.bar-intro { color: #e0e0e0 !important; font-size: 16px; margin-top: 10px; font-style: italic; }
+.center-header { text-align: center; margin-bottom: 45px; }
+.bar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+.bar-item-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+.bar-item-card:hover { transform: translateY(-5px); border-color: #d4af37; box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25); background: rgba(255, 255, 255, 0.06); }
+.bar-item-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.1); }
+.item-details { width: 100%; margin-bottom: 15px; }
+.item-details summary { font-size: 18px; font-weight: 600; color: #d4af37; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; padding: 5px 0; outline: none; }
+.item-details summary::-webkit-details-marker { display: none; }
+.card-price { color: #ffffff; font-weight: 700; background: rgba(212, 175, 55, 0.2); padding: 2px 8px; border-radius: 4px; font-size: 16px; }
+.details-content { font-size: 14px; color: #cccccc; padding: 12px 0 5px 0; border-top: 1px dashed rgba(212,175,55,0.2); margin-top: 10px; animation: fadeIn 0.3s ease; }
+.details-content p { margin-bottom: 15px; line-height: 1.5; color: #e0e0e0; }
+.details-content label { display: block; margin-top: 12px; font-weight: 500; color: #d4af37; font-size: 13px; }
+.details-content select { width: 100%; background: #081026; color: #ffffff; border: 1px solid rgba(212, 175, 55, 0.4); padding: 8px; border-radius: 6px; margin-top: 5px; outline: none; cursor: pointer; font-size: 14px; }
+.details-content select:focus { border-color: #d4af37; }
+.card-actions { display: flex; gap: 12px; margin-top: auto; padding-top: 10px; }
+.buy-now-btn, .add-cart-btn { flex: 1; padding: 10px 15px; font-size: 14px; font-weight: 700; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; outline: none; text-align: center; }
+.buy-now-btn { background: linear-gradient(135deg, #d4af37, #aa841c); color: #081026; border: none; }
+.buy-now-btn:hover { background: linear-gradient(135deg, #ffd700, #d4af37); transform: translateY(-1px); }
+.add-cart-btn { background: transparent; color: #d4af37; border: 1px solid #d4af37; }
+.add-cart-btn:hover { background: rgba(212, 175, 55, 0.1); color: #ffffff; border-color: #ffffff; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+df-messenger { --df-messenger-button-titlebar-color: #111111; --df-messenger-button-titlebar-font-color: #ffffff; --df-messenger-chat-background-color: #f9f9f9; --df-messenger-bot-message: #ffffff; --df-messenger-bot-message-font-color: #1a1a1a; --df-messenger-user-message: #e50914; --df-messenger-user-message-font-color: #ffffff; --df-messenger-send-icon: #e50914; z-index: 9999; }
+.custom-bot-mascot { position: fixed; bottom: 15px; right: 15px; width: 90px; z-index: 9998; cursor: pointer; transition: transform 0.2s; mix-blend-mode: multiply; }
+.custom-bot-mascot:hover { transform: scale(1.1); }
